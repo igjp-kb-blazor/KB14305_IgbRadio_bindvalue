@@ -1,0 +1,18 @@
+﻿<div style="width:500px; margin:auto; padding:24px; display:flex; flex-direction:column; gap:24px;">
+    <IgbRadioGroup @bind-Value="selectedFruit">
+        <IgbRadio Value="Apple">
+            Apple
+        </IgbRadio>
+        <IgbRadio Value="Orange">
+            Orange
+        </IgbRadio>
+        <IgbRadio Value="Grape">
+            Grape
+        </IgbRadio>
+    </IgbRadioGroup>
+    <p>選択された果物 : @selectedFruit</p>
+</div>
+
+@code {
+    private string selectedFruit = "Orange";
+}
